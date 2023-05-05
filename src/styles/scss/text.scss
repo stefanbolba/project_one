@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary-text-color;
+}
+
+.text-secondary {
+  color: $secondary-text-color !important;
+}
+
+.text-white {
+  color: #fff;
+}

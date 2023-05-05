@@ -1,0 +1,17 @@
+@import "../../../styles/variables.scss";
+
+.nav {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+
+  > li {
+    display: flex;
+    color: $secondary-text-color;
+    padding: 0.5rem 1rem;
+
+    :hover {
+      color: $secondary-color;
+    }
+  }
+}
