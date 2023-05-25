@@ -1,18 +1,26 @@
+"use client";
+
 import Header from "@/app/components/header/Header";
+import { RequireOrganization } from "@/app/providers/OrganizationProvider";
+import { withAuth } from "@/app/providers/AuthProvider";
 
 export const metadata = {
   title: "Dashboard",
   description: "Welcome to the dashboard",
 };
 
-export default function Layout({ children }) {
+function Layout({ children }) {
   return (
     <html lang='en'>
       <head />
-      <body>
-        <Header />
-        {children}
-      </body>
+      <RequireOrganization>
+        <body>
+          <Header />
+          {children}
+        </body>
+      </RequireOrganization>
     </html>
   );
 }
+
+export default withAuth(Layout);

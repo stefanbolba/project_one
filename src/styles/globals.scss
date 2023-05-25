@@ -1,11 +1,22 @@
 @import "./variables.scss";
 
+//add root
+
+:root {
+  --primary: #005ca4;
+  --secondary: #ededf0;
+  --muted: #93a1b0;
+
+  --text-primary: #314351;
+  --text-secondary: #8ec6f5;
+  --text-muted: #93a1b0;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
 }
 
 a {
